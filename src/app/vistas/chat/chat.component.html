@@ -1,0 +1,14 @@
+<div class="contenedor">
+    <div class="contenedor-mensajes"> 
+        <h3>Mensajes</h3>
+        <div *ngFor="let msj of mensajes">
+            <label for="">{{msj.user}}</label>
+            <p>{{msj.text}}</p>
+        </div>
+    </div>
+    <div class="contenedorInteraccion">
+        <input class="txtMensaje" type="text" [(ngModel)]="userChat.text">
+        <button class="btn-EnviarMensaje" (click)="sendMessage()">Enviar mensaje</button>
+    </div>
+
+</div>

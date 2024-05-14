@@ -1,0 +1,66 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+.contenedor {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 700px;
+    background-color: #fff;
+    margin: 0 auto; /* Centra horizontalmente */
+}
+
+.contenedor-mensajes {
+    height: 600px;
+    width: 600px;
+    overflow-y: auto;
+}
+
+.contenedor-mensajes div {
+    display: flex;
+    margin-bottom: 10px;
+    border: 1px solid;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contenedorInteraccion{
+    display: flex;
+}
+
+.txtMensaje {
+    width: calc(100% - 90px); /* Toma el ancho restante después de considerar el ancho del botón */
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-EnviarMensaje {
+    display: inline-block;
+    width: 10%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.btn-EnviarMensaje:hover {
+    background-color: #0056b3;
+}
